@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:#4482cf;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Oswald';
+
+}
+header{
+  background-color: white;
+  width: 60%;
+  text-align: center;
+  padding: 50px;
+  margin-top: 30px;
+  border-radius: 3px;
+  color: #15498a;
+}
+
+form{
+  background-color: white;
+  width: 60%;
+  padding: 50px;
+  border-radius: 3px;
+  color: #15498a;;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+
+.form-style{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+width: 400px;
+padding: 20px;
+}
+
+input[type='text'], [type='password']{
+    width: 250px;
+    border: solid 2px #15498a;
+    border-radius: 3px;
+  }
+
+  label{
+    text-align: right;
+    width: 120px;
+    padding: 10px;
+  }
+
+  input[type='submit']{
+    background-color: #eda737;
+    font-size: 18px;
+    padding:10px 40px;
+    color: white;
+    cursor:pointer;
+    border: none;
+    border-radius: 3px;
+    margin-top: 30px;
+    font-family: 'Oswald';
+  }
+
+  @media only screen and (max-width: 700px) {
+    .form-style {
+      flex-direction: column;
+      width: 250px;
+    }
+    input[type='text'], [type='password']{
+        width: 200px;
+        border: solid 2px #15498a;
+        height: 40px;
+      }
+
+      label{
+        text-align: left;
+        width: 120px;
+        padding: 10px 0px;
+
+      }
+
+      header{
+        width: 80%;
+      }
+
+      form{
+        width: 80%;
+      }
+
+  }
